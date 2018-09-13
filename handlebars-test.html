@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Niedziele Handlowe</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script>
+		function onLoad(el) {
+			var now = new Date();
+			var id =  now.getFullYear() + '-' + ( now.getMonth() + 1 );
+			var el = document.getElementById( id );
+			el.scrollIntoView( false );
+		}
+	</script>
+
+</head>
+<body onload="onLoad()">
+	<h1 class="headline">
+		Czy sklepy będą otwarte w niedziele?
+	</h1>
+	<h2 class="yesno no">
+		NIE
+	</h2>
+
+	<div class="calendar-scroll-container">
+
+		<time class="calendar-unit" id="2018-3" datetime="2018-3">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Marzec 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-2"></a>
+			<a class="month-next-link" href="#2018-4"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 4;" datetime="2018-3-1">1</time>
+				<time   datetime="2018-3-2">2</time>
+				<time   datetime="2018-3-3">3</time>
+				<time class="open"  datetime="2018-3-4">4</time>
+				<time   datetime="2018-3-5">5</time>
+				<time   datetime="2018-3-6">6</time>
+				<time   datetime="2018-3-7">7</time>
+				<time   datetime="2018-3-8">8</time>
+				<time   datetime="2018-3-9">9</time>
+				<time   datetime="2018-3-10">10</time>
+				<time class="closed"  datetime="2018-3-11">11</time>
+				<time   datetime="2018-3-12">12</time>
+				<time   datetime="2018-3-13">13</time>
+				<time   datetime="2018-3-14">14</time>
+				<time   datetime="2018-3-15">15</time>
+				<time   datetime="2018-3-16">16</time>
+				<time   datetime="2018-3-17">17</time>
+				<time class="closed"  datetime="2018-3-18">18</time>
+				<time   datetime="2018-3-19">19</time>
+				<time   datetime="2018-3-20">20</time>
+				<time   datetime="2018-3-21">21</time>
+				<time   datetime="2018-3-22">22</time>
+				<time   datetime="2018-3-23">23</time>
+				<time   datetime="2018-3-24">24</time>
+				<time class="open"  datetime="2018-3-25">25</time>
+				<time   datetime="2018-3-26">26</time>
+				<time   datetime="2018-3-27">27</time>
+				<time   datetime="2018-3-28">28</time>
+				<time   datetime="2018-3-29">29</time>
+				<time   datetime="2018-3-30">30</time>
+				<time   datetime="2018-3-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-4" datetime="2018-4">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Kwiecień 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-3"></a>
+			<a class="month-next-link" href="#2018-5"></a>
+			<div class="calendar">
+				<time class="closed" style="grid-column-start: 7;" datetime="2018-4-1">1</time>
+				<time   datetime="2018-4-2">2</time>
+				<time   datetime="2018-4-3">3</time>
+				<time   datetime="2018-4-4">4</time>
+				<time   datetime="2018-4-5">5</time>
+				<time   datetime="2018-4-6">6</time>
+				<time   datetime="2018-4-7">7</time>
+				<time class="closed"  datetime="2018-4-8">8</time>
+				<time   datetime="2018-4-9">9</time>
+				<time   datetime="2018-4-10">10</time>
+				<time   datetime="2018-4-11">11</time>
+				<time   datetime="2018-4-12">12</time>
+				<time   datetime="2018-4-13">13</time>
+				<time   datetime="2018-4-14">14</time>
+				<time class="closed"  datetime="2018-4-15">15</time>
+				<time   datetime="2018-4-16">16</time>
+				<time   datetime="2018-4-17">17</time>
+				<time   datetime="2018-4-18">18</time>
+				<time   datetime="2018-4-19">19</time>
+				<time   datetime="2018-4-20">20</time>
+				<time   datetime="2018-4-21">21</time>
+				<time class="closed"  datetime="2018-4-22">22</time>
+				<time   datetime="2018-4-23">23</time>
+				<time   datetime="2018-4-24">24</time>
+				<time   datetime="2018-4-25">25</time>
+				<time   datetime="2018-4-26">26</time>
+				<time   datetime="2018-4-27">27</time>
+				<time   datetime="2018-4-28">28</time>
+				<time class="open"  datetime="2018-4-29">29</time>
+				<time   datetime="2018-4-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-5" datetime="2018-5">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Maj 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-4"></a>
+			<a class="month-next-link" href="#2018-6"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 2;" datetime="2018-5-1">1</time>
+				<time   datetime="2018-5-2">2</time>
+				<time   datetime="2018-5-3">3</time>
+				<time   datetime="2018-5-4">4</time>
+				<time   datetime="2018-5-5">5</time>
+				<time class="open"  datetime="2018-5-6">6</time>
+				<time   datetime="2018-5-7">7</time>
+				<time   datetime="2018-5-8">8</time>
+				<time   datetime="2018-5-9">9</time>
+				<time   datetime="2018-5-10">10</time>
+				<time   datetime="2018-5-11">11</time>
+				<time   datetime="2018-5-12">12</time>
+				<time class="closed"  datetime="2018-5-13">13</time>
+				<time   datetime="2018-5-14">14</time>
+				<time   datetime="2018-5-15">15</time>
+				<time   datetime="2018-5-16">16</time>
+				<time   datetime="2018-5-17">17</time>
+				<time   datetime="2018-5-18">18</time>
+				<time   datetime="2018-5-19">19</time>
+				<time class="closed"  datetime="2018-5-20">20</time>
+				<time   datetime="2018-5-21">21</time>
+				<time   datetime="2018-5-22">22</time>
+				<time   datetime="2018-5-23">23</time>
+				<time   datetime="2018-5-24">24</time>
+				<time   datetime="2018-5-25">25</time>
+				<time   datetime="2018-5-26">26</time>
+				<time class="open"  datetime="2018-5-27">27</time>
+				<time   datetime="2018-5-28">28</time>
+				<time   datetime="2018-5-29">29</time>
+				<time   datetime="2018-5-30">30</time>
+				<time   datetime="2018-5-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-6" datetime="2018-6">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Czerwiec 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-5"></a>
+			<a class="month-next-link" href="#2018-7"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 5;" datetime="2018-6-1">1</time>
+				<time   datetime="2018-6-2">2</time>
+				<time class="open"  datetime="2018-6-3">3</time>
+				<time   datetime="2018-6-4">4</time>
+				<time   datetime="2018-6-5">5</time>
+				<time   datetime="2018-6-6">6</time>
+				<time   datetime="2018-6-7">7</time>
+				<time   datetime="2018-6-8">8</time>
+				<time   datetime="2018-6-9">9</time>
+				<time class="closed"  datetime="2018-6-10">10</time>
+				<time   datetime="2018-6-11">11</time>
+				<time   datetime="2018-6-12">12</time>
+				<time   datetime="2018-6-13">13</time>
+				<time   datetime="2018-6-14">14</time>
+				<time   datetime="2018-6-15">15</time>
+				<time   datetime="2018-6-16">16</time>
+				<time class="closed"  datetime="2018-6-17">17</time>
+				<time   datetime="2018-6-18">18</time>
+				<time   datetime="2018-6-19">19</time>
+				<time   datetime="2018-6-20">20</time>
+				<time   datetime="2018-6-21">21</time>
+				<time   datetime="2018-6-22">22</time>
+				<time   datetime="2018-6-23">23</time>
+				<time class="open"  datetime="2018-6-24">24</time>
+				<time   datetime="2018-6-25">25</time>
+				<time   datetime="2018-6-26">26</time>
+				<time   datetime="2018-6-27">27</time>
+				<time   datetime="2018-6-28">28</time>
+				<time   datetime="2018-6-29">29</time>
+				<time   datetime="2018-6-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-7" datetime="2018-7">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Lipiec 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-6"></a>
+			<a class="month-next-link" href="#2018-8"></a>
+			<div class="calendar">
+				<time class="open" style="grid-column-start: 7;" datetime="2018-7-1">1</time>
+				<time   datetime="2018-7-2">2</time>
+				<time   datetime="2018-7-3">3</time>
+				<time   datetime="2018-7-4">4</time>
+				<time   datetime="2018-7-5">5</time>
+				<time   datetime="2018-7-6">6</time>
+				<time   datetime="2018-7-7">7</time>
+				<time class="closed"  datetime="2018-7-8">8</time>
+				<time   datetime="2018-7-9">9</time>
+				<time   datetime="2018-7-10">10</time>
+				<time   datetime="2018-7-11">11</time>
+				<time   datetime="2018-7-12">12</time>
+				<time   datetime="2018-7-13">13</time>
+				<time   datetime="2018-7-14">14</time>
+				<time class="closed"  datetime="2018-7-15">15</time>
+				<time   datetime="2018-7-16">16</time>
+				<time   datetime="2018-7-17">17</time>
+				<time   datetime="2018-7-18">18</time>
+				<time   datetime="2018-7-19">19</time>
+				<time   datetime="2018-7-20">20</time>
+				<time   datetime="2018-7-21">21</time>
+				<time class="closed"  datetime="2018-7-22">22</time>
+				<time   datetime="2018-7-23">23</time>
+				<time   datetime="2018-7-24">24</time>
+				<time   datetime="2018-7-25">25</time>
+				<time   datetime="2018-7-26">26</time>
+				<time   datetime="2018-7-27">27</time>
+				<time   datetime="2018-7-28">28</time>
+				<time class="open"  datetime="2018-7-29">29</time>
+				<time   datetime="2018-7-30">30</time>
+				<time   datetime="2018-7-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-8" datetime="2018-8">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Sierpień 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-7"></a>
+			<a class="month-next-link" href="#2018-9"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 3;" datetime="2018-8-1">1</time>
+				<time   datetime="2018-8-2">2</time>
+				<time   datetime="2018-8-3">3</time>
+				<time   datetime="2018-8-4">4</time>
+				<time class="open"  datetime="2018-8-5">5</time>
+				<time   datetime="2018-8-6">6</time>
+				<time   datetime="2018-8-7">7</time>
+				<time   datetime="2018-8-8">8</time>
+				<time   datetime="2018-8-9">9</time>
+				<time   datetime="2018-8-10">10</time>
+				<time   datetime="2018-8-11">11</time>
+				<time class="closed"  datetime="2018-8-12">12</time>
+				<time   datetime="2018-8-13">13</time>
+				<time   datetime="2018-8-14">14</time>
+				<time   datetime="2018-8-15">15</time>
+				<time   datetime="2018-8-16">16</time>
+				<time   datetime="2018-8-17">17</time>
+				<time   datetime="2018-8-18">18</time>
+				<time class="closed"  datetime="2018-8-19">19</time>
+				<time   datetime="2018-8-20">20</time>
+				<time   datetime="2018-8-21">21</time>
+				<time   datetime="2018-8-22">22</time>
+				<time   datetime="2018-8-23">23</time>
+				<time   datetime="2018-8-24">24</time>
+				<time   datetime="2018-8-25">25</time>
+				<time class="open"  datetime="2018-8-26">26</time>
+				<time   datetime="2018-8-27">27</time>
+				<time   datetime="2018-8-28">28</time>
+				<time   datetime="2018-8-29">29</time>
+				<time   datetime="2018-8-30">30</time>
+				<time   datetime="2018-8-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-9" datetime="2018-9">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Wrzesień 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-8"></a>
+			<a class="month-next-link" href="#2018-10"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 6;" datetime="2018-9-1">1</time>
+				<time class="open"  datetime="2018-9-2">2</time>
+				<time   datetime="2018-9-3">3</time>
+				<time   datetime="2018-9-4">4</time>
+				<time   datetime="2018-9-5">5</time>
+				<time   datetime="2018-9-6">6</time>
+				<time   datetime="2018-9-7">7</time>
+				<time   datetime="2018-9-8">8</time>
+				<time class="closed"  datetime="2018-9-9">9</time>
+				<time   datetime="2018-9-10">10</time>
+				<time   datetime="2018-9-11">11</time>
+				<time   datetime="2018-9-12">12</time>
+				<time class="today"  datetime="2018-9-13">13</time>
+				<time   datetime="2018-9-14">14</time>
+				<time   datetime="2018-9-15">15</time>
+				<time class="closed"  datetime="2018-9-16">16</time>
+				<time   datetime="2018-9-17">17</time>
+				<time   datetime="2018-9-18">18</time>
+				<time   datetime="2018-9-19">19</time>
+				<time   datetime="2018-9-20">20</time>
+				<time   datetime="2018-9-21">21</time>
+				<time   datetime="2018-9-22">22</time>
+				<time class="closed"  datetime="2018-9-23">23</time>
+				<time   datetime="2018-9-24">24</time>
+				<time   datetime="2018-9-25">25</time>
+				<time   datetime="2018-9-26">26</time>
+				<time   datetime="2018-9-27">27</time>
+				<time   datetime="2018-9-28">28</time>
+				<time   datetime="2018-9-29">29</time>
+				<time class="open"  datetime="2018-9-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-10" datetime="2018-10">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Październik 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-9"></a>
+			<a class="month-next-link" href="#2018-11"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 1;" datetime="2018-10-1">1</time>
+				<time   datetime="2018-10-2">2</time>
+				<time   datetime="2018-10-3">3</time>
+				<time   datetime="2018-10-4">4</time>
+				<time   datetime="2018-10-5">5</time>
+				<time   datetime="2018-10-6">6</time>
+				<time class="open"  datetime="2018-10-7">7</time>
+				<time   datetime="2018-10-8">8</time>
+				<time   datetime="2018-10-9">9</time>
+				<time   datetime="2018-10-10">10</time>
+				<time   datetime="2018-10-11">11</time>
+				<time   datetime="2018-10-12">12</time>
+				<time   datetime="2018-10-13">13</time>
+				<time class="closed"  datetime="2018-10-14">14</time>
+				<time   datetime="2018-10-15">15</time>
+				<time   datetime="2018-10-16">16</time>
+				<time   datetime="2018-10-17">17</time>
+				<time   datetime="2018-10-18">18</time>
+				<time   datetime="2018-10-19">19</time>
+				<time   datetime="2018-10-20">20</time>
+				<time class="closed"  datetime="2018-10-21">21</time>
+				<time   datetime="2018-10-22">22</time>
+				<time   datetime="2018-10-23">23</time>
+				<time   datetime="2018-10-24">24</time>
+				<time   datetime="2018-10-25">25</time>
+				<time   datetime="2018-10-26">26</time>
+				<time   datetime="2018-10-27">27</time>
+				<time class="open"  datetime="2018-10-28">28</time>
+				<time   datetime="2018-10-29">29</time>
+				<time   datetime="2018-10-30">30</time>
+				<time   datetime="2018-10-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-11" datetime="2018-11">
+			<h3 class="month-name">
+				Niedziele handlowe <b>listopad 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-10"></a>
+			<a class="month-next-link" href="#2018-12"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 4;" datetime="2018-11-1">1</time>
+				<time   datetime="2018-11-2">2</time>
+				<time   datetime="2018-11-3">3</time>
+				<time class="open"  datetime="2018-11-4">4</time>
+				<time   datetime="2018-11-5">5</time>
+				<time   datetime="2018-11-6">6</time>
+				<time   datetime="2018-11-7">7</time>
+				<time   datetime="2018-11-8">8</time>
+				<time   datetime="2018-11-9">9</time>
+				<time   datetime="2018-11-10">10</time>
+				<time class="closed"  datetime="2018-11-11">11</time>
+				<time   datetime="2018-11-12">12</time>
+				<time   datetime="2018-11-13">13</time>
+				<time   datetime="2018-11-14">14</time>
+				<time   datetime="2018-11-15">15</time>
+				<time   datetime="2018-11-16">16</time>
+				<time   datetime="2018-11-17">17</time>
+				<time class="closed"  datetime="2018-11-18">18</time>
+				<time   datetime="2018-11-19">19</time>
+				<time   datetime="2018-11-20">20</time>
+				<time   datetime="2018-11-21">21</time>
+				<time   datetime="2018-11-22">22</time>
+				<time   datetime="2018-11-23">23</time>
+				<time   datetime="2018-11-24">24</time>
+				<time class="open"  datetime="2018-11-25">25</time>
+				<time   datetime="2018-11-26">26</time>
+				<time   datetime="2018-11-27">27</time>
+				<time   datetime="2018-11-28">28</time>
+				<time   datetime="2018-11-29">29</time>
+				<time   datetime="2018-11-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2018-12" datetime="2018-12">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Grudzień 2018</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-11"></a>
+			<a class="month-next-link" href="#2019-1"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 6;" datetime="2018-12-1">1</time>
+				<time class="open"  datetime="2018-12-2">2</time>
+				<time   datetime="2018-12-3">3</time>
+				<time   datetime="2018-12-4">4</time>
+				<time   datetime="2018-12-5">5</time>
+				<time   datetime="2018-12-6">6</time>
+				<time   datetime="2018-12-7">7</time>
+				<time   datetime="2018-12-8">8</time>
+				<time class="closed"  datetime="2018-12-9">9</time>
+				<time   datetime="2018-12-10">10</time>
+				<time   datetime="2018-12-11">11</time>
+				<time   datetime="2018-12-12">12</time>
+				<time   datetime="2018-12-13">13</time>
+				<time   datetime="2018-12-14">14</time>
+				<time   datetime="2018-12-15">15</time>
+				<time class="open"  datetime="2018-12-16">16</time>
+				<time   datetime="2018-12-17">17</time>
+				<time   datetime="2018-12-18">18</time>
+				<time   datetime="2018-12-19">19</time>
+				<time   datetime="2018-12-20">20</time>
+				<time   datetime="2018-12-21">21</time>
+				<time   datetime="2018-12-22">22</time>
+				<time class="open"  datetime="2018-12-23">23</time>
+				<time   datetime="2018-12-24">24</time>
+				<time   datetime="2018-12-25">25</time>
+				<time   datetime="2018-12-26">26</time>
+				<time   datetime="2018-12-27">27</time>
+				<time   datetime="2018-12-28">28</time>
+				<time   datetime="2018-12-29">29</time>
+				<time class="open"  datetime="2018-12-30">30</time>
+				<time   datetime="2018-12-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-1" datetime="2019-1">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Styczeń 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2018-12"></a>
+			<a class="month-next-link" href="#2019-2"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 2;" datetime="2019-1-1">1</time>
+				<time   datetime="2019-1-2">2</time>
+				<time   datetime="2019-1-3">3</time>
+				<time   datetime="2019-1-4">4</time>
+				<time   datetime="2019-1-5">5</time>
+				<time class="closed"  datetime="2019-1-6">6</time>
+				<time   datetime="2019-1-7">7</time>
+				<time   datetime="2019-1-8">8</time>
+				<time   datetime="2019-1-9">9</time>
+				<time   datetime="2019-1-10">10</time>
+				<time   datetime="2019-1-11">11</time>
+				<time   datetime="2019-1-12">12</time>
+				<time class="closed"  datetime="2019-1-13">13</time>
+				<time   datetime="2019-1-14">14</time>
+				<time   datetime="2019-1-15">15</time>
+				<time   datetime="2019-1-16">16</time>
+				<time   datetime="2019-1-17">17</time>
+				<time   datetime="2019-1-18">18</time>
+				<time   datetime="2019-1-19">19</time>
+				<time class="closed"  datetime="2019-1-20">20</time>
+				<time   datetime="2019-1-21">21</time>
+				<time   datetime="2019-1-22">22</time>
+				<time   datetime="2019-1-23">23</time>
+				<time   datetime="2019-1-24">24</time>
+				<time   datetime="2019-1-25">25</time>
+				<time   datetime="2019-1-26">26</time>
+				<time class="closed"  datetime="2019-1-27">27</time>
+				<time   datetime="2019-1-28">28</time>
+				<time   datetime="2019-1-29">29</time>
+				<time   datetime="2019-1-30">30</time>
+				<time   datetime="2019-1-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-2" datetime="2019-2">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Luty 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-1"></a>
+			<a class="month-next-link" href="#2019-3"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 5;" datetime="2019-2-1">1</time>
+				<time   datetime="2019-2-2">2</time>
+				<time class="closed"  datetime="2019-2-3">3</time>
+				<time   datetime="2019-2-4">4</time>
+				<time   datetime="2019-2-5">5</time>
+				<time   datetime="2019-2-6">6</time>
+				<time   datetime="2019-2-7">7</time>
+				<time   datetime="2019-2-8">8</time>
+				<time   datetime="2019-2-9">9</time>
+				<time class="closed"  datetime="2019-2-10">10</time>
+				<time   datetime="2019-2-11">11</time>
+				<time   datetime="2019-2-12">12</time>
+				<time   datetime="2019-2-13">13</time>
+				<time   datetime="2019-2-14">14</time>
+				<time   datetime="2019-2-15">15</time>
+				<time   datetime="2019-2-16">16</time>
+				<time class="closed"  datetime="2019-2-17">17</time>
+				<time   datetime="2019-2-18">18</time>
+				<time   datetime="2019-2-19">19</time>
+				<time   datetime="2019-2-20">20</time>
+				<time   datetime="2019-2-21">21</time>
+				<time   datetime="2019-2-22">22</time>
+				<time   datetime="2019-2-23">23</time>
+				<time class="closed"  datetime="2019-2-24">24</time>
+				<time   datetime="2019-2-25">25</time>
+				<time   datetime="2019-2-26">26</time>
+				<time   datetime="2019-2-27">27</time>
+				<time   datetime="2019-2-28">28</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-3" datetime="2019-3">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Marzec 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-2"></a>
+			<a class="month-next-link" href="#2019-4"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 5;" datetime="2019-3-1">1</time>
+				<time   datetime="2019-3-2">2</time>
+				<time class="closed"  datetime="2019-3-3">3</time>
+				<time   datetime="2019-3-4">4</time>
+				<time   datetime="2019-3-5">5</time>
+				<time   datetime="2019-3-6">6</time>
+				<time   datetime="2019-3-7">7</time>
+				<time   datetime="2019-3-8">8</time>
+				<time   datetime="2019-3-9">9</time>
+				<time class="closed"  datetime="2019-3-10">10</time>
+				<time   datetime="2019-3-11">11</time>
+				<time   datetime="2019-3-12">12</time>
+				<time   datetime="2019-3-13">13</time>
+				<time   datetime="2019-3-14">14</time>
+				<time   datetime="2019-3-15">15</time>
+				<time   datetime="2019-3-16">16</time>
+				<time class="closed"  datetime="2019-3-17">17</time>
+				<time   datetime="2019-3-18">18</time>
+				<time   datetime="2019-3-19">19</time>
+				<time   datetime="2019-3-20">20</time>
+				<time   datetime="2019-3-21">21</time>
+				<time   datetime="2019-3-22">22</time>
+				<time   datetime="2019-3-23">23</time>
+				<time class="closed"  datetime="2019-3-24">24</time>
+				<time   datetime="2019-3-25">25</time>
+				<time   datetime="2019-3-26">26</time>
+				<time   datetime="2019-3-27">27</time>
+				<time   datetime="2019-3-28">28</time>
+				<time   datetime="2019-3-29">29</time>
+				<time   datetime="2019-3-30">30</time>
+				<time class="closed"  datetime="2019-3-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-4" datetime="2019-4">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Kwiecień 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-3"></a>
+			<a class="month-next-link" href="#2019-5"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 1;" datetime="2019-4-1">1</time>
+				<time   datetime="2019-4-2">2</time>
+				<time   datetime="2019-4-3">3</time>
+				<time   datetime="2019-4-4">4</time>
+				<time   datetime="2019-4-5">5</time>
+				<time   datetime="2019-4-6">6</time>
+				<time class="closed"  datetime="2019-4-7">7</time>
+				<time   datetime="2019-4-8">8</time>
+				<time   datetime="2019-4-9">9</time>
+				<time   datetime="2019-4-10">10</time>
+				<time   datetime="2019-4-11">11</time>
+				<time   datetime="2019-4-12">12</time>
+				<time   datetime="2019-4-13">13</time>
+				<time class="closed"  datetime="2019-4-14">14</time>
+				<time   datetime="2019-4-15">15</time>
+				<time   datetime="2019-4-16">16</time>
+				<time   datetime="2019-4-17">17</time>
+				<time   datetime="2019-4-18">18</time>
+				<time   datetime="2019-4-19">19</time>
+				<time   datetime="2019-4-20">20</time>
+				<time class="closed"  datetime="2019-4-21">21</time>
+				<time   datetime="2019-4-22">22</time>
+				<time   datetime="2019-4-23">23</time>
+				<time   datetime="2019-4-24">24</time>
+				<time   datetime="2019-4-25">25</time>
+				<time   datetime="2019-4-26">26</time>
+				<time   datetime="2019-4-27">27</time>
+				<time class="closed"  datetime="2019-4-28">28</time>
+				<time   datetime="2019-4-29">29</time>
+				<time   datetime="2019-4-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-5" datetime="2019-5">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Maj 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-4"></a>
+			<a class="month-next-link" href="#2019-6"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 3;" datetime="2019-5-1">1</time>
+				<time   datetime="2019-5-2">2</time>
+				<time   datetime="2019-5-3">3</time>
+				<time   datetime="2019-5-4">4</time>
+				<time class="closed"  datetime="2019-5-5">5</time>
+				<time   datetime="2019-5-6">6</time>
+				<time   datetime="2019-5-7">7</time>
+				<time   datetime="2019-5-8">8</time>
+				<time   datetime="2019-5-9">9</time>
+				<time   datetime="2019-5-10">10</time>
+				<time   datetime="2019-5-11">11</time>
+				<time class="closed"  datetime="2019-5-12">12</time>
+				<time   datetime="2019-5-13">13</time>
+				<time   datetime="2019-5-14">14</time>
+				<time   datetime="2019-5-15">15</time>
+				<time   datetime="2019-5-16">16</time>
+				<time   datetime="2019-5-17">17</time>
+				<time   datetime="2019-5-18">18</time>
+				<time class="closed"  datetime="2019-5-19">19</time>
+				<time   datetime="2019-5-20">20</time>
+				<time   datetime="2019-5-21">21</time>
+				<time   datetime="2019-5-22">22</time>
+				<time   datetime="2019-5-23">23</time>
+				<time   datetime="2019-5-24">24</time>
+				<time   datetime="2019-5-25">25</time>
+				<time class="closed"  datetime="2019-5-26">26</time>
+				<time   datetime="2019-5-27">27</time>
+				<time   datetime="2019-5-28">28</time>
+				<time   datetime="2019-5-29">29</time>
+				<time   datetime="2019-5-30">30</time>
+				<time   datetime="2019-5-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-6" datetime="2019-6">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Czerwiec 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-5"></a>
+			<a class="month-next-link" href="#2019-7"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 6;" datetime="2019-6-1">1</time>
+				<time class="closed"  datetime="2019-6-2">2</time>
+				<time   datetime="2019-6-3">3</time>
+				<time   datetime="2019-6-4">4</time>
+				<time   datetime="2019-6-5">5</time>
+				<time   datetime="2019-6-6">6</time>
+				<time   datetime="2019-6-7">7</time>
+				<time   datetime="2019-6-8">8</time>
+				<time class="closed"  datetime="2019-6-9">9</time>
+				<time   datetime="2019-6-10">10</time>
+				<time   datetime="2019-6-11">11</time>
+				<time   datetime="2019-6-12">12</time>
+				<time   datetime="2019-6-13">13</time>
+				<time   datetime="2019-6-14">14</time>
+				<time   datetime="2019-6-15">15</time>
+				<time class="closed"  datetime="2019-6-16">16</time>
+				<time   datetime="2019-6-17">17</time>
+				<time   datetime="2019-6-18">18</time>
+				<time   datetime="2019-6-19">19</time>
+				<time   datetime="2019-6-20">20</time>
+				<time   datetime="2019-6-21">21</time>
+				<time   datetime="2019-6-22">22</time>
+				<time class="closed"  datetime="2019-6-23">23</time>
+				<time   datetime="2019-6-24">24</time>
+				<time   datetime="2019-6-25">25</time>
+				<time   datetime="2019-6-26">26</time>
+				<time   datetime="2019-6-27">27</time>
+				<time   datetime="2019-6-28">28</time>
+				<time   datetime="2019-6-29">29</time>
+				<time class="closed"  datetime="2019-6-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-7" datetime="2019-7">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Lipiec 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-6"></a>
+			<a class="month-next-link" href="#2019-8"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 1;" datetime="2019-7-1">1</time>
+				<time   datetime="2019-7-2">2</time>
+				<time   datetime="2019-7-3">3</time>
+				<time   datetime="2019-7-4">4</time>
+				<time   datetime="2019-7-5">5</time>
+				<time   datetime="2019-7-6">6</time>
+				<time class="closed"  datetime="2019-7-7">7</time>
+				<time   datetime="2019-7-8">8</time>
+				<time   datetime="2019-7-9">9</time>
+				<time   datetime="2019-7-10">10</time>
+				<time   datetime="2019-7-11">11</time>
+				<time   datetime="2019-7-12">12</time>
+				<time   datetime="2019-7-13">13</time>
+				<time class="closed"  datetime="2019-7-14">14</time>
+				<time   datetime="2019-7-15">15</time>
+				<time   datetime="2019-7-16">16</time>
+				<time   datetime="2019-7-17">17</time>
+				<time   datetime="2019-7-18">18</time>
+				<time   datetime="2019-7-19">19</time>
+				<time   datetime="2019-7-20">20</time>
+				<time class="closed"  datetime="2019-7-21">21</time>
+				<time   datetime="2019-7-22">22</time>
+				<time   datetime="2019-7-23">23</time>
+				<time   datetime="2019-7-24">24</time>
+				<time   datetime="2019-7-25">25</time>
+				<time   datetime="2019-7-26">26</time>
+				<time   datetime="2019-7-27">27</time>
+				<time class="closed"  datetime="2019-7-28">28</time>
+				<time   datetime="2019-7-29">29</time>
+				<time   datetime="2019-7-30">30</time>
+				<time   datetime="2019-7-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-8" datetime="2019-8">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Sierpień 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-7"></a>
+			<a class="month-next-link" href="#2019-9"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 4;" datetime="2019-8-1">1</time>
+				<time   datetime="2019-8-2">2</time>
+				<time   datetime="2019-8-3">3</time>
+				<time class="closed"  datetime="2019-8-4">4</time>
+				<time   datetime="2019-8-5">5</time>
+				<time   datetime="2019-8-6">6</time>
+				<time   datetime="2019-8-7">7</time>
+				<time   datetime="2019-8-8">8</time>
+				<time   datetime="2019-8-9">9</time>
+				<time   datetime="2019-8-10">10</time>
+				<time class="closed"  datetime="2019-8-11">11</time>
+				<time   datetime="2019-8-12">12</time>
+				<time   datetime="2019-8-13">13</time>
+				<time   datetime="2019-8-14">14</time>
+				<time   datetime="2019-8-15">15</time>
+				<time   datetime="2019-8-16">16</time>
+				<time   datetime="2019-8-17">17</time>
+				<time class="closed"  datetime="2019-8-18">18</time>
+				<time   datetime="2019-8-19">19</time>
+				<time   datetime="2019-8-20">20</time>
+				<time   datetime="2019-8-21">21</time>
+				<time   datetime="2019-8-22">22</time>
+				<time   datetime="2019-8-23">23</time>
+				<time   datetime="2019-8-24">24</time>
+				<time class="closed"  datetime="2019-8-25">25</time>
+				<time   datetime="2019-8-26">26</time>
+				<time   datetime="2019-8-27">27</time>
+				<time   datetime="2019-8-28">28</time>
+				<time   datetime="2019-8-29">29</time>
+				<time   datetime="2019-8-30">30</time>
+				<time   datetime="2019-8-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-9" datetime="2019-9">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Wrzesień 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-8"></a>
+			<a class="month-next-link" href="#2019-10"></a>
+			<div class="calendar">
+				<time class="closed" style="grid-column-start: 7;" datetime="2019-9-1">1</time>
+				<time   datetime="2019-9-2">2</time>
+				<time   datetime="2019-9-3">3</time>
+				<time   datetime="2019-9-4">4</time>
+				<time   datetime="2019-9-5">5</time>
+				<time   datetime="2019-9-6">6</time>
+				<time   datetime="2019-9-7">7</time>
+				<time class="closed"  datetime="2019-9-8">8</time>
+				<time   datetime="2019-9-9">9</time>
+				<time   datetime="2019-9-10">10</time>
+				<time   datetime="2019-9-11">11</time>
+				<time   datetime="2019-9-12">12</time>
+				<time   datetime="2019-9-13">13</time>
+				<time   datetime="2019-9-14">14</time>
+				<time class="closed"  datetime="2019-9-15">15</time>
+				<time   datetime="2019-9-16">16</time>
+				<time   datetime="2019-9-17">17</time>
+				<time   datetime="2019-9-18">18</time>
+				<time   datetime="2019-9-19">19</time>
+				<time   datetime="2019-9-20">20</time>
+				<time   datetime="2019-9-21">21</time>
+				<time class="closed"  datetime="2019-9-22">22</time>
+				<time   datetime="2019-9-23">23</time>
+				<time   datetime="2019-9-24">24</time>
+				<time   datetime="2019-9-25">25</time>
+				<time   datetime="2019-9-26">26</time>
+				<time   datetime="2019-9-27">27</time>
+				<time   datetime="2019-9-28">28</time>
+				<time class="closed"  datetime="2019-9-29">29</time>
+				<time   datetime="2019-9-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-10" datetime="2019-10">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Październik 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-9"></a>
+			<a class="month-next-link" href="#2019-11"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 2;" datetime="2019-10-1">1</time>
+				<time   datetime="2019-10-2">2</time>
+				<time   datetime="2019-10-3">3</time>
+				<time   datetime="2019-10-4">4</time>
+				<time   datetime="2019-10-5">5</time>
+				<time class="closed"  datetime="2019-10-6">6</time>
+				<time   datetime="2019-10-7">7</time>
+				<time   datetime="2019-10-8">8</time>
+				<time   datetime="2019-10-9">9</time>
+				<time   datetime="2019-10-10">10</time>
+				<time   datetime="2019-10-11">11</time>
+				<time   datetime="2019-10-12">12</time>
+				<time class="closed"  datetime="2019-10-13">13</time>
+				<time   datetime="2019-10-14">14</time>
+				<time   datetime="2019-10-15">15</time>
+				<time   datetime="2019-10-16">16</time>
+				<time   datetime="2019-10-17">17</time>
+				<time   datetime="2019-10-18">18</time>
+				<time   datetime="2019-10-19">19</time>
+				<time class="closed"  datetime="2019-10-20">20</time>
+				<time   datetime="2019-10-21">21</time>
+				<time   datetime="2019-10-22">22</time>
+				<time   datetime="2019-10-23">23</time>
+				<time   datetime="2019-10-24">24</time>
+				<time   datetime="2019-10-25">25</time>
+				<time   datetime="2019-10-26">26</time>
+				<time class="closed"  datetime="2019-10-27">27</time>
+				<time   datetime="2019-10-28">28</time>
+				<time   datetime="2019-10-29">29</time>
+				<time   datetime="2019-10-30">30</time>
+				<time   datetime="2019-10-31">31</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-11" datetime="2019-11">
+			<h3 class="month-name">
+				Niedziele handlowe <b>listopad 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-10"></a>
+			<a class="month-next-link" href="#2019-12"></a>
+			<div class="calendar">
+				<time  style="grid-column-start: 5;" datetime="2019-11-1">1</time>
+				<time   datetime="2019-11-2">2</time>
+				<time class="closed"  datetime="2019-11-3">3</time>
+				<time   datetime="2019-11-4">4</time>
+				<time   datetime="2019-11-5">5</time>
+				<time   datetime="2019-11-6">6</time>
+				<time   datetime="2019-11-7">7</time>
+				<time   datetime="2019-11-8">8</time>
+				<time   datetime="2019-11-9">9</time>
+				<time class="closed"  datetime="2019-11-10">10</time>
+				<time   datetime="2019-11-11">11</time>
+				<time   datetime="2019-11-12">12</time>
+				<time   datetime="2019-11-13">13</time>
+				<time   datetime="2019-11-14">14</time>
+				<time   datetime="2019-11-15">15</time>
+				<time   datetime="2019-11-16">16</time>
+				<time class="closed"  datetime="2019-11-17">17</time>
+				<time   datetime="2019-11-18">18</time>
+				<time   datetime="2019-11-19">19</time>
+				<time   datetime="2019-11-20">20</time>
+				<time   datetime="2019-11-21">21</time>
+				<time   datetime="2019-11-22">22</time>
+				<time   datetime="2019-11-23">23</time>
+				<time class="closed"  datetime="2019-11-24">24</time>
+				<time   datetime="2019-11-25">25</time>
+				<time   datetime="2019-11-26">26</time>
+				<time   datetime="2019-11-27">27</time>
+				<time   datetime="2019-11-28">28</time>
+				<time   datetime="2019-11-29">29</time>
+				<time   datetime="2019-11-30">30</time>
+			</div>
+		</time>
+		<time class="calendar-unit" id="2019-12" datetime="2019-12">
+			<h3 class="month-name">
+				Niedziele handlowe <b>Grudzień 2019</b>
+			</h3>
+			<a class="month-prev-link" href="#2019-11"></a>
+			<a class="month-next-link" href="#2020-1"></a>
+			<div class="calendar">
+				<time class="closed" style="grid-column-start: 7;" datetime="2019-12-1">1</time>
+				<time   datetime="2019-12-2">2</time>
+				<time   datetime="2019-12-3">3</time>
+				<time   datetime="2019-12-4">4</time>
+				<time   datetime="2019-12-5">5</time>
+				<time   datetime="2019-12-6">6</time>
+				<time   datetime="2019-12-7">7</time>
+				<time class="closed"  datetime="2019-12-8">8</time>
+				<time   datetime="2019-12-9">9</time>
+				<time   datetime="2019-12-10">10</time>
+				<time   datetime="2019-12-11">11</time>
+				<time   datetime="2019-12-12">12</time>
+				<time   datetime="2019-12-13">13</time>
+				<time   datetime="2019-12-14">14</time>
+				<time class="closed"  datetime="2019-12-15">15</time>
+				<time   datetime="2019-12-16">16</time>
+				<time   datetime="2019-12-17">17</time>
+				<time   datetime="2019-12-18">18</time>
+				<time   datetime="2019-12-19">19</time>
+				<time   datetime="2019-12-20">20</time>
+				<time   datetime="2019-12-21">21</time>
+				<time class="closed"  datetime="2019-12-22">22</time>
+				<time   datetime="2019-12-23">23</time>
+				<time   datetime="2019-12-24">24</time>
+				<time   datetime="2019-12-25">25</time>
+				<time   datetime="2019-12-26">26</time>
+				<time   datetime="2019-12-27">27</time>
+				<time   datetime="2019-12-28">28</time>
+				<time class="closed"  datetime="2019-12-29">29</time>
+				<time   datetime="2019-12-30">30</time>
+				<time   datetime="2019-12-31">31</time>
+			</div>
+		</time>
+	</div>
+	<div>
+		<label for="calendar-2018">2018</label>
+	</div>
+	<div>
+		<label for="calendar-2019">2019</label>
+	</div>
+	<div>
+		<label for="calendar-allMonths">allMonths</label>
+	</div>
+</body>
+</html>

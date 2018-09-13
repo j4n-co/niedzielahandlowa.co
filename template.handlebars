@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Niedziele Handlowe</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script>
+		function onLoad(el) {
+			var now = new Date();
+			var id =  now.getFullYear() + '-' + ( now.getMonth() + 1 );
+			var el = document.getElementById( id );
+			el.scrollIntoView( false );
+		}
+	</script>
+
+</head>
+<body onload="onLoad()">
+	<h1 class="headline">
+		{{mainHeadline}}
+	</h1>
+	<h2 class="yesno no">
+		{{yesno}}
+	</h2>
+
+	<div class="calendar-scroll-container">
+
+		{{#each allMonths as |month monthKey| }}
+		<time class="calendar-unit" id="{{month.monthId}}" datetime="{{month.monthId}}">
+			<h3 class="month-name">
+				Niedziele handlowe <b>{{month.monthName}}</b>
+			</h3>
+			<a class="month-prev-link" href="#{{month.prevMonthId}}"></a>
+			<a class="month-next-link" href="#{{month.nextMonthId}}"></a>
+			<div class="calendar">
+				{{#each month.days as |day|}}
+				<time {{{day.classAttr}}} {{{day.styleAttr}}} datetime="{{day.year}}-{{day.month}}-{{day.dayOfMonth}}">{{day.dayOfMonth}}</time>
+				{{/each}}
+			</div>
+		</time>
+		{{/each}}
+	</div>
+	{{#each calendarUnits as |calUnit yearKey|}}
+	<div>
+		<label for="calendar-{{yearKey}}">{{yearKey}}</label>
+	</div>
+	{{/each}}
+</body>
+</html>
