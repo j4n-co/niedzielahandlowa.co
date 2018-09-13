@@ -1,0 +1,134 @@
+/*
+* === Layout ===
+*/
+html {
+	font-family: "Brandon Grotesque", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 18px;
+	background-color: #f9f7f7;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 1rem;
+	color: #333;
+	text-align: center;
+}
+
+/*
+* === Headline ===
+*/
+
+.headline {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-top: 0;
+}
+
+/*
+* === Yesno ===
+*/
+.yesno {
+	font-size: 8rem;
+	line-height: 7rem;
+	margin: 0;
+	font-weight: 800;
+}
+
+.yesno.yes {
+	color: green;
+}
+
+.yesno.no {
+	color: #af4c4c;
+}
+/*
+* === Calendar ===
+*/
+.calendar-scroll-container {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.calendar-unit {
+	width: 100%;
+	max-width: 100%;
+	white-space: normal;
+	display: inline-grid;
+	grid-template-columns: 50px 1fr 50px;
+	grid-template-areas:
+	"heading  heading heading"
+	"previous content next"
+	"footer   footer  footer";
+}
+.calendar {
+	margin: 0 auto;
+	display: grid;
+	grid-area: content;
+	height: 60vw;
+	min-width: 100%;
+	max-height: 400px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.month-name {
+	grid-area: heading;
+	font-weight: normal;
+}
+.month-name b {
+	white-space: nowrap;
+}
+.month-prev-link {
+	grid-area: previous;
+	transform: rotate(180deg);
+
+}
+.month-next-link {
+	grid-area: next;
+}
+
+.month-next-link, .month-prev-link {
+	align-self: center;
+	background: right center / contain no-repeat url("./images/next.svg");
+	height: 35px;
+}
+
+.calendar time {
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background */
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center center;
+}
+
+.calendar time.today {
+	background-image: url("./images/today.svg");
+}
+
+.calendar time.closed {
+	background-image: url("./images/closed.svg");
+}
+
+.calendar time.open {
+	background-image: url("./images/open.svg");
+}
+
+.subheading {
+	margin: 0;
+	font-size: 0.8rem;
+	text-align: left;
+	font-weight: normal;
+}
+.month-link {
+	display: inline-block;
+	font-size: 0.6rem;
+	width: 6vw;
+	height: 6vw;
+	line-height: 6vw;
+	background-color: rgba(0,0,0,0.05);
+	text-decoration: none;
+	color: #333;
+}
