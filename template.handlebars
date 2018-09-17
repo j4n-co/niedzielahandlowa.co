@@ -20,8 +20,8 @@
 	<h1 class="headline">
 		{{mainHeadline}}
 	</h1>
-	<h2 class="yesno no">
-		{{yesno}}
+	<h2 class="yesno {{yesno.class}}">
+		{{yesno.text}}
 	</h2>
 
 	<div class="calendar-scroll-container">
@@ -41,10 +41,16 @@
 		</time>
 		{{/each}}
 	</div>
-	{{#each calendarUnits as |calUnit yearKey|}}
-	<div>
-		<label for="calendar-{{yearKey}}">{{yearKey}}</label>
-	</div>
+	<div class="calendar-picker">
+	{{#each years as |year yearKey|}}
+		<input {{#if year.currentYear }} checked='true' {{/if}} name="calendar-tabs" type="radio" class="calendar-tabs-selector" id="calendar-tab-selector-{{yearKey}}"/>
+		<label class="calendar-tabs-label" for="calendar-tab-selector-{{yearKey}}">{{yearKey}}</label>
+		<section class="calendar-tabs-content" id="calendar-tab-content-{{yearKey}}">
+		{{#each year.months as |month monthKey| }}
+			<a name="{{yearKey}}-{{month}}" href="#{{yearKey}}-{{month}}">{{month}}</a>
+		{{/each}}
+		</section>
 	{{/each}}
+	</div>
 </body>
 </html>

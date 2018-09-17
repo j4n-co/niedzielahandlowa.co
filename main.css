@@ -132,3 +132,47 @@ body {
 	text-decoration: none;
 	color: #333;
 }
+.calendar-picker {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+.calendar-tabs-label {
+	order: 1;
+	padding: 0.1rem 0.5rem;
+}
+
+.calendar-tabs-content {
+	display: none;
+	min-width: 100%;
+	order: 2;
+}
+
+.calendar-tabs-content a {
+	flex-grow: 1;
+	text-decoration: none;
+	padding: 0.2em 0.5rem;
+	border: 1px solid #c4c3c1;
+	justify-content: center;
+	text-align: center;
+	color: rgb(114, 108, 108);
+}
+
+.calendar-tabs-selector {
+	opacity: 0;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#calendar-tab-selector-2018:checked ~ #calendar-tab-content-2018,
+#calendar-tab-selector-2019:checked ~ #calendar-tab-content-2019 {
+	display: flex;
+}
+
+.calendar-tabs-selector:checked + .calendar-tabs-label {
+	background-color: #d1cdc9;
+}
+

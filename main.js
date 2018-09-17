@@ -20,6 +20,7 @@ class FancyDate {
 	constructor( dateString, closedDates ) {
 		var closedDates = closedDates || [];
 		this.now = new Date();
+		var dataString = dataString || this.now;
 		this.Date = new Date( dateString );
 		this.isOpen = closedDates.indexOf( this.Date.toUTCString() ) > -1;
 	}
@@ -82,7 +83,10 @@ function createCalendarData( start, end, closedDays ) {
 	var endDate = new FancyDate( end );
 	var numberOfDays = daysInRange( startDate.Date, endDate.Date );
 	var tmpDate = new FancyDate( start );
-	var data = { allMonths:{} };
+	var data = {
+		allMonths:{},
+		years: {}
+	};
 
 	range(0, numberOfDays).forEach( () => {
 		var year = tmpDate.year;
@@ -91,28 +95,15 @@ function createCalendarData( start, end, closedDays ) {
 		var nextMonthId = `${year}-${parseInt(month)+1}`;
 		var prevMonthId = `${year}-${parseInt(month)-1}`;
 
-		if ( data[year] === undefined ) {
-			data[year] = {};
+		if ( data.years[year] === undefined ) {
+			data.years[year] = { months: [] };
+			data.years[year].currentYear = year == new Date().getFullYear();
 		}
 
-		if ( data[year][month] === undefined ) {
-
-			data[year][month] = {};
-			data[year][month]['days'] = [];
-
-			if ( ( parseInt( month ) + 1 ) > 12 ) {
-				nextMonthId = `${parseInt(year) + 1}-1`;
-			}
-			if ( ( parseInt( month ) - 1 ) < 1 ) {
-				prevMonthId = `${parseInt(year) - 1}-12`;
-			}
-
-			data[year][month].monthId = monthId;
-			data[year][month].prevMonthId = prevMonthId;
-			data[year][month].nextMonthId = nextMonthId;
-			data[year][month].monthName = monthNames[ month ];
-
+		if ( data.years[year].months.indexOf( month ) === -1 ) {
+			data.years[year].months.push(month)
 		}
+
 		if ( data.allMonths[monthId] === undefined ) {
 			data.allMonths[monthId] = {};
 			data.allMonths[monthId].prevMonthId = prevMonthId;
@@ -123,7 +114,6 @@ function createCalendarData( start, end, closedDays ) {
 
 		}
 		data.allMonths[monthId].days.push( tmpDate );
-		data[year][month].days.push( tmpDate );
 		tmpDate = new FancyDate( tmpDate.tomorrow, closedDays );
 	});
 	return data;
@@ -134,26 +124,26 @@ function generateFile( data ) {
 	var template = Handlebars.compile(source);
 	var today = new FancyDate( new Date() );
 	var headline = 'Czy sklepy będą otwarte w niedziele?';
-	var yesno = "NIE";
 	var nextSunday = new FancyDate( new Date().setDate( today.Date.getDate() + ( 7 - today.dayOfWeek ) ) );
 	if (today.isSunday ) {
 		headline = "Czy sklepy są otwarte dzisiaj?"
-		if ( today.isOpen ) {
-			yesno = 'TAK';
-		}
 	}
 	if (new FancyDate( today.tomorrow ).isSunday ) {
 		headline = "Czy sklepy będą jutro otwarte?"
 	}
 
 	var templateData = {
-		calendarUnits: data,
 		allMonths: data.allMonths,
+		years: data.years,
 		mainHeadline: headline,
-		yesno: ( nextSunday.isOpen ) ? 'TAK' : 'NIE'
+		currentYear: today.Date.getFullYear(),
+		yesno: {
+			text: ( nextSunday.isOpen ) ? 'TAK' : 'NIE',
+			class: ( nextSunday.isOpen ) ? 'yes' : 'no'
+		}
 	}
 	var result = template( templateData );
-	fs.writeFileSync( 'handlebars-test.html', result );
+	fs.writeFileSync( 'index.html', result );
 }
 
 const data = createCalendarData( 'March 1 2018 00:00:00 GMT+00:00', 'December 31 2019 00:00:00 GMT+00:00', closedDays )
