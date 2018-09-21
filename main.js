@@ -103,7 +103,12 @@ function createCalendarData( start, end, closedDays ) {
 		if ( data.years[year].months.indexOf( month ) === -1 ) {
 			data.years[year].months.push(month)
 		}
-
+		if ( parseInt( month ) === 12 ) {
+			nextMonthId = `${year + 1}-1`;
+		}
+		if (  parseInt( month ) === 1 ) {
+			prevMonthId = `${year - 1}-12`;
+		}
 		if ( data.allMonths[monthId] === undefined ) {
 			data.allMonths[monthId] = {};
 			data.allMonths[monthId].prevMonthId = prevMonthId;

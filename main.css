@@ -23,6 +23,7 @@ body {
 	font-size: 2rem;
 	font-weight: 800;
 	margin-top: 0;
+	line-height: 1.2;
 }
 
 /*
@@ -49,6 +50,7 @@ body {
 	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-bottom: 1rem;
 }
 
 .calendar-unit {
@@ -146,6 +148,7 @@ body {
 	display: none;
 	min-width: 100%;
 	order: 2;
+	font-size: 0.8rem;
 }
 
 .calendar-tabs-content a {
