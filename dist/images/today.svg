@@ -1,11 +1,6 @@
 
 <svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-6S" transform="translate(-343.000000, -524.000000)" fill-rule="nonzero" stroke="#979797" stroke-width="1">
-            <circle id="Oval-3" cx="356.5" cy="537.5" r="12"></circle>
-        </g>
-    </g>
+<g id="iPhone-6S" fill="none"  stroke="#444" stroke-width="2">
+	<circle id="Oval-3" cx="13" cy="13" r="12"></circle>
+</g>
 </svg>
