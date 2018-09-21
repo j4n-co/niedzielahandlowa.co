@@ -148,7 +148,7 @@ function generateFile( data ) {
 		}
 	}
 	var result = template( templateData );
-	fs.writeFileSync( 'index.html', result );
+	fs.writeFileSync( 'dist/index.html', result );
 }
 
 const data = createCalendarData( 'March 1 2018 00:00:00 GMT+00:00', 'December 31 2019 00:00:00 GMT+00:00', closedDays )
