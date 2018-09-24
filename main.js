@@ -22,6 +22,12 @@ class FancyDate {
 		this.now = new Date();
 		var dataString = dataString || this.now;
 		this.Date = new Date( dateString );
+
+		this.Date.setUTCHours( 0 );
+		this.Date.setUTCMinutes( 0 );
+		this.Date.setUTCSeconds( 0 );
+		this.Date.setUTCMilliseconds( 0 );
+
 		this.isOpen = closedDates.indexOf( this.Date.toUTCString() ) > -1;
 	}
 
@@ -129,7 +135,10 @@ function generateFile( data ) {
 	var template = Handlebars.compile(source);
 	var today = new FancyDate( new Date() );
 	var headline = 'Czy sklepy będą otwarte w niedziele?';
-	var nextSunday = new FancyDate( new Date().setDate( today.Date.getDate() + ( 7 - today.dayOfWeek ) ) );
+	var nextSunday = new FancyDate(
+		new Date().setDate(
+			today.Date.getDate() + ( 7 - today.dayOfWeek )
+			), closedDays );
 	if (today.isSunday ) {
 		headline = "Czy sklepy są otwarte dzisiaj?"
 	}
